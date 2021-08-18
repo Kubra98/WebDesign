@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from xpanthersolutions.com/admin-templates/theta/html/light-vertical/page-starter.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Aug 2019 19:23:14 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Theta is a premium responsive admin dashboard template with great features.">
+    <meta name="keywords" content="responsive, admin template, dashboard template, bootstrap 4, ui kits, ecommerce, web app, crm, cms, html, sass support, scss">
+    <meta name="author" content="Themesbox">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Theta - Responsive Admin Dashboard Template</title>
+    <!-- Fevicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Start css -->
+    <!-- Switchery css -->
+    <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <!-- End css -->
+    <!-- Slick css -->
+    <link href="slick/slick.css" rel="stylesheet">
+    <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+
+    <style>
+        input {
+            width: 30%;
+        }
+
+        /*img:hover {
+            border: 2px solid purple;
+        }*/
+
+
+        .nav a {
+            font-family: source_sans_prosemibold,serif !important;
+            -webkit-font-smoothing: antialiased;
+            color: #333;
+            font-size: 14px;
+            line-height: 34px;
+            padding: 0;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            box-sizing: border-box;
+            letter-spacing: 0.18px;
+            background-color: none !important;
+            margin-right: 20px;
+        }
+
+        a {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .sikayet:hover {
+            text-decoration-line: underline;
+        }
+
+        .beden:hover {
+            background-color: #4A2964;
+            color: white;
+        }
+
+        .moreproduct:hover {
+            border: 1px solid #944dff;
+        }
+
+        .moreproduct a:hover {
+            color: purple;
+            background-color: aqua;
+        }
+
+        .slider-nav img:hover {
+            border: 2px solid #944dff;
+        }
+
+        .ilgi a:hover {
+            color: #944dff;
+            border: 1px solid #944dff;
+        }
+        .campaign a:hover {
+            background-color: #944dff;
+        }
+    </style>
+</head>
+<body class="vertical-layout">
+    <!-- Start Infobar Notifications Sidebar -->
+    <div id="infobar-notifications-sidebar" class="infobar-notifications-sidebar">
+        <div class="infobar-notifications-sidebar-head d-flex w-100 justify-content-between">
+            <h4>Notifications</h4><a href="javascript:void(0)" id="infobar-notifications-close" class="infobar-notifications-close"><img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close"></a>
+        </div>
+        <div class="infobar-notifications-sidebar-body">
+            <ul class="nav nav-pills nav-justified" id="infobar-pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-messages-tab" data-toggle="pill" href="#pills-messages" role="tab" aria-controls="pills-messages" aria-selected="true">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-emails-tab" data-toggle="pill" href="#pills-emails" role="tab" aria-controls="pills-emails" aria-selected="false">Emails</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-actions-tab" data-toggle="pill" href="#pills-actions" role="tab" aria-controls="pills-actions" aria-selected="false">Actions</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="infobar-pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-messages" role="tabpanel" aria-labelledby="pills-messages-tab">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <img class="mr-3 align-self-center rounded-circle" src="assets/images/users/girl.svg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5>Amy Adams<span class="badge badge-success">1</span><span class="timing">Jan 22</span></h5>
+                                <p>Hey!! What are you doing tonight ?</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img class="mr-3 align-self-center rounded-circle" src="assets/images/users/boy.svg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5>James Simpsons<span class="badge badge-success">2</span><span class="timing">Feb 15</span></h5>
+                                <p>What's up ???</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img class="mr-3 align-self-center rounded-circle" src="assets/images/users/men.svg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5>Mark Witherspoon<span class="badge badge-success">3</span><span class="timing">Mar 03</span></h5>
+                                <p>I will be late today in office.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img class="mr-3 align-self-center rounded-circle" src="assets/images/users/women.svg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5>Jenniffer Wills<span class="badge badge-success">4</span><span class="timing">Apr 05</span></h5>
+                                <p>Venture presentation is ready.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="pills-emails" role="tabpanel" aria-labelledby="pills-emails-tab">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <span class="mr-3 align-self-center img-icon">N</span>
+                            <div class="media-body">
+                                <h5>Nelson Smith<span class="timing">Jan 22</span></h5>
+                                <p><span class="badge badge-danger-inverse">WORK</span>Salary has been processed.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 align-self-center img-icon">C</span>
+                            <div class="media-body">
+                                <h5>Courtney Cox<i class="feather icon-star text-warning ml-2"></i><span class="timing">Feb 15</span></h5>
+                                <p><span class="badge badge-success-inverse">URGENT</span>New product launching...</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 align-self-center img-icon">R</span>
+                            <div class="media-body">
+                                <h5>Rachel White<span class="timing">Mar 03</span></h5>
+                                <p><span class="badge badge-secondary-inverse">ORDER</span><span class="badge badge-info-inverse">SHOPPING</span>Your order has been...</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 align-self-center img-icon">F</span>
+                            <div class="media-body">
+                                <h5>Freepik<span class="timing">Mar 03</span></h5>
+                                <p><a href="#" class="badge badge-primary mr-2">VERIFY NOW</a>New Sign verification req...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="pills-actions" role="tabpanel" aria-labelledby="pills-actions-tab">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <span class="mr-3 action-icon badge badge-success-inverse"><i class="feather icon-check"></i></span>
+                            <div class="media-body">
+                                <h5 class="action-title">Payment Success !!!</h5>
+                                <p class="my-3">We have received your payment toward ad Account : 9876543210. Your Ad is Running.</p>
+                                <p><span class="badge badge-danger-inverse">INFO</span><span class="badge badge-info-inverse">STATUS</span><span class="timing">Today, 09:39 PM</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 action-icon badge badge-primary-inverse"><i class="feather icon-calendar"></i></span>
+                            <div class="media-body">
+                                <h5 class="action-title">Nobita Applied for Leave.</h5>
+                                <p class="my-3">Nobita applied for leave due to personal reasons on 22nd Feb.</p>
+                                <p><span class="badge badge-success">APPROVE</span><span class="badge badge-danger">REJECT</span><span class="timing">Yesterday, 05:25 PM</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 action-icon badge badge-danger-inverse"><i class="feather icon-alert-triangle"></i></span>
+                            <div class="media-body">
+                                <h5 class="action-title">Alert</h5>
+                                <p class="my-3">There has been new Log in fron your account at Melbourne. Mark it safe or report.</p>
+                                <p><i class="feather icon-check text-success mr-3"></i><a href="#" class="text-muted">Report Now</a><span class="timing">5 Jan 2019, 02:13 PM</span></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 action-icon badge badge-warning-inverse"><i class="feather icon-award"></i></span>
+                            <div class="media-body">
+                                <h5 class="action-title">Congratulations !!!</h5>
+                                <p class="my-3">Your role in the organization has been changed from Editor to Chief Strategist.</p>
+                                <p><span class="badge badge-danger-inverse">ACTIVITY</span><span class="timing">10 Jan 2019, 08:49 PM</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infobar-notifications-sidebar-overlay"></div>
+    <!-- End Infobar Notifications Sidebar -->
+    <!-- Start Infobar Setting Sidebar -->
+    <div id="infobar-settings-sidebar" class="infobar-settings-sidebar">
+        <div class="infobar-settings-sidebar-head d-flex w-100 justify-content-between">
+            <h4>Settings</h4><a href="javascript:void(0)" id="infobar-settings-close" class="infobar-settings-close"><img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close"></a>
+        </div>
+        <div class="infobar-settings-sidebar-body">
+            <div class="custom-color-setting">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <h6 class="mb-3">Select Color</h6>
+                    </div>
+                    <div class="col-12">
+                        <div class="custom-radio-button ml-1">
+                            <div class="form-check-inline radio-primary">
+                                <input type="radio" id="customRadioInlineSidebar1" name="customRadioInlineSidebar" checked>
+                                <label for="customRadioInlineSidebar1"></label>
+                            </div>
+                            <div class="form-check-inline radio-secondary">
+                                <input type="radio" id="customRadioInlineSidebar2" name="customRadioInlineSidebar">
+                                <label for="customRadioInlineSidebar2"></label>
+                            </div>
+                            <div class="form-check-inline radio-success">
+                                <input type="radio" id="customRadioInlineSidebar3" name="customRadioInlineSidebar">
+                                <label for="customRadioInlineSidebar3"></label>
+                            </div>
+                            <div class="form-check-inline radio-danger">
+                                <input type="radio" id="customRadioInlineSidebar4" name="customRadioInlineSidebar">
+                                <label for="customRadioInlineSidebar4"></label>
+                            </div>
+                            <div class="form-check-inline radio-warning">
+                                <input type="radio" id="customRadioInlineSidebar5" name="customRadioInlineSidebar">
+                                <label for="customRadioInlineSidebar5"></label>
+                            </div>
+                            <div class="form-check-inline radio-info">
+                                <input type="radio" id="customRadioInlineSidebar6" name="customRadioInlineSidebar">
+                                <label for="customRadioInlineSidebar6"></label>
+                            </div>
+                            <div class="form-check-inline radio-light">
+                                <input type="radio" id="customRadioInlineSidebar7" name="customRadioInlineSidebar">
+                                <label for="customRadioInlineSidebar7"></label>
+                            </div>
+                            <div class="form-check-inline radio-dark">
+                                <input type="radio" id="customRadioInlineSidebar8" name="customRadioInlineSidebar">
+                                <label for="customRadioInlineSidebar8"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-mode-setting">
+                <div class="row align-items-center pb-3">
+                    <div class="col-8"><h6 class="mb-0">Night Mode</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-night-mode" checked /></div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-8"><h6 class="mb-0">Navigation Sidebar</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-navigation-sidebar" checked /></div>
+                </div>
+            </div>
+            <div class="custom-layout-setting">
+                <div class="row align-items-center pb-3">
+                    <div class="col-12">
+                        <h6 class="mb-3">Select Account</h6>
+                    </div>
+                    <div class="col-6">
+                        <div class="account-box active">
+                            <img src="assets/images/users/boy.svg" class="img-fluid" alt="user">
+                            <h5>Shourya</h5>
+                            <p>CEO</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="account-box">
+                            <img src="assets/images/users/women.svg" class="img-fluid" alt="user">
+                            <h5>Amy</h5>
+                            <p>COO</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="account-box">
+                            <img src="assets/images/users/men.svg" class="img-fluid" alt="user">
+                            <h5>John</h5>
+                            <p>MD</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="account-box">
+                            <p class="dash-analytic-icon"><i class="feather icon-plus font-35"></i></p>
+                            <h5>Add</h5>
+                            <p>ACCOUNT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infobar-settings-sidebar-overlay"></div>
+    <!-- End Infobar Setting Sidebar -->
+    <!-- Start Containerbar -->
+    <div id="containerbar">
+        <!-- Start Leftbar -->
+        <div class="leftbar" style="background-color: blueviolet;">
+            </div>
+        <!-- End Leftbar -->
+        <!-- Start Rightbar -->
+        <div class="rightbar">
+            <!-- Start Topbar Mobile -->
+            <div class="topbar-mobile">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="mobile-logobar">
+                            <a href="index.html" class="mobile-logo"><img src="assets/images/logo.svg" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="mobile-togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="topbar-toggle-icon">
+                                        <a class="topbar-toggle-hamburger" href="javascript:void();">
+                                            <img src="assets/images/svg-icon/horizontal.svg" class="img-fluid menu-hamburger-horizontal" alt="horizontal">
+                                            <img src="assets/images/svg-icon/verticle.svg" class="img-fluid menu-hamburger-vertical" alt="verticle">
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger" href="javascript:void();">
+                                            <img src="assets/images/svg-icon/collapse.svg" class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                            <img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close">
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Topbar -->
+            <div class="topbar"></div>
+            <!-- End Topbar -->
+            <!-- Start Breadcrumbbar -->
+            <div class="breadcrumbbar"></div>
+            <!-- End Breadcrumbbar -->
+            <!-- Start Contentbar -->
+            <div class="contentbar">
+                <!-- Start row -->
+                <div class="row">
+                    <!-- Start col -->
+
+                    <div class="col-md-1"></div>
+
+                    <div class="col-md-11">
+                        <div class="nav ">
+
+                            <img src="https://cdn.dsmcdn.com/web/logo/ty-logo.svg" alt="Trendyol" style="width:111px;height:100%;margin-bottom:0px;margin-right:10%;margin-left:18px" />
+                            <div class="searchbar">
+                                <form>
+                                    <div class="input-group">
+                                        <input type="search" class="form-control" aria-label="Search" aria-describedby="button-addon2" style="background-color: rgba(148, 77, 255, 0.1); width:450px;margin-bottom:0px" placeholder="Aradığınız ürün, kategori veya markayı yazınız" />
+
+                                        <div class="input-group-append" style="color:aqua!important">
+
+                                            <button class="btn" type="submit" id="button-addon2">
+                                                <img src="assets/images/svg-icon/search.svg" class="img-fluid" alt="search">
+
+                                            </button>
+                                        </div>
+
+
+                                        <div class="d-flex flex-row">
+                                            <button class="btn"><i class="feather icon-user"></i>Giriş Yap</button>
+                                            <button class="btn"><i class="feather icon-star-on"></i>Favorilerim</button>
+                                            <button class="btn"><i class="feather icon-shopping-cart"></i>Sepetim</button>
+
+
+                                        </div>
+
+
+                                    </div>
+                                </form>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- End col -->
+                </div>
+                <!-- End row -->
+
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-11">
+                        <div class="card-body">
+                            <div class="nav nav-tabs custom-tab-line mb-3" id="defaultTabLine" role="tablist">
+
+                                <a class="btn hover" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Kadın
+                                </a>
+                                <a class="btn hover" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Erkek
+                                </a>
+                                <a class="btn hover" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    çocuk
+                                </a>
+                                <a class="btn hover" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    ev&yasam
+                                </a>
+                                <a class="btn hover" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    süpermarket
+                                </a>
+                                <a class="btn hover" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    kozmetik
+                                </a>
+                                <a class="btn hover" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    ayakkabı&çanta
+                                </a>
+                                <a class="btn hover" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    saat&aksesuar
+                                </a>
+                                <a class="btn hover" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    elektronik
+                                </a>
+                                <a class="btn hover" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    spor&outdoor
+                                </a>
+
+
+
+
+                            </div>
+
+                            <div class="collapse" id="collapseExample">
+                                <div class="card d-flex flex-row" style="background-color: rgba(148, 77, 255, 0.1);margin-top:0px;">
+                                    <div class="card-body" style="width:80% !important;">
+                                        <div class="row">
+
+
+
+                                            <div class="col-md-2">
+                                                <h5>Giyim</h5>
+                                                <div class=" d-flex flex-column">
+
+
+                                                    <a href="#">Elbise</a>
+                                                    <a href="#">Tişört</a>
+                                                    <a href="#">Gömlek</a>
+                                                    <a href="#">Kot Pantolon</a>
+                                                    <a href="#">Kot Ceket</a>
+                                                    <a href="#">Pantolon</a>
+                                                    <a href="#">Şort</a>
+                                                    <a href="#">Bluz</a>
+                                                    <a href="#">Ceket</a>
+                                                    <a href="#">Kot Pantolon</a>
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-md-2">
+                                                <h5>Ayakkabı</h5>
+                                                <div class=" d-flex flex-column">
+
+
+                                                    <a href="#">Topuku Ayakkabı</a>
+                                                    <a href="#">Sneakers</a>
+                                                    <a href="#">Günlük Ayakkabı</a>
+                                                    <a href="#">Babet</a>
+                                                    <a href="#">Sandalet</a>
+                                                    <a href="#">Terlik</a>
+
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <h5>Kozmetik</h5>
+                                                <div class=" d-flex flex-column">
+
+                                                    <a href="#">Parfüm</a>
+                                                    <a href="#">Göz Makyajı</a>
+                                                    <a href="#">Cilt Bakım</a>
+                                                    <a href="#">Saç Bakım</a>
+                                                    <a href="#">Makyaj</a>
+                                                    <a href="#">Ağız Bakımı</a>
+
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-2">
+                                                <h5>Spor&Outdoor</h5>
+                                                <div class=" d-flex flex-column">
+
+
+                                                    <a href="">T-shirt</a>
+                                                    <a href="#">Tayt</a>
+                                                    <a href="#">Eşofman</a>
+                                                    <a href="#">Koşu Ayakkabısı</a>
+                                                    <a href="#">Spor Çantası</a>
+                                                    <a href="#">Kar Botu</a>
+
+                                                </div>
+
+                                            </div>
+
+
+
+                                            <div class="col-md-3">
+                                                <img src="https://cdn.dsmcdn.com/mnresize/500/247/ty156/campaign/banners/original/576996/d138415e6d_1_detay.jpg" style="width:90%; margin-bottom:3%;" />
+                                                <img src="https://cdn.dsmcdn.com/mnresize/500/247/ty157/campaign/banners/original/576997/ed0a8124aa_2_detay.jpg" style="width:90%; " />
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-1"></div>
+
+                    <div class="col-md-8">
+
+                        <div class="card" style="background-color: rgba(148, 77, 255, 0.1); margin-left: 2%; margin-right:0%; ">
+
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="slider slider-for">
+
+                                            <img src="https://cdn.dsmcdn.com/ty76/product/media/images/20210222/15/65876766/83733447/1/1_org_zoom.jpg" style="width:80% !important;" />
+                                            <img src="https://cdn.dsmcdn.com/ty76/product/media/images/20210222/15/65876766/83733447/2/2_org_zoom.jpg" style="width:80%;" />
+                                            <img src="https://cdn.dsmcdn.com/ty76/product/media/images/20210222/15/65876766/83733447/4/4_org_zoom.jpg" style="width: 80%;" />
+
+                                            <img src="https://cdn.dsmcdn.com/ty75/product/media/images/20210222/15/65876766/83733447/5/5_org_zoom.jpg" style="width: 80%;" />
+
+
+                                        </div>
+
+                                        <div class="slider slider-nav">
+                                            <img src="https://cdn.dsmcdn.com/ty76/product/media/images/20210222/15/65876766/83733447/1/1_org_zoom.jpg" class="m-3 ml-4" style="width:15%; height:15%;" />
+
+                                            <img src="https://cdn.dsmcdn.com/ty76/product/media/images/20210222/15/65876766/83733447/2/2_org_zoom.jpg" class="m-3 ml-4" style="width:15%; height:15%;" />
+
+                                            <img src="https://cdn.dsmcdn.com/ty76/product/media/images/20210222/15/65876766/83733447/4/4_org_zoom.jpg" class="m-3 ml-4" style="width:15%; height:15%;" />
+                                            <img src="https://cdn.dsmcdn.com/ty75/product/media/images/20210222/15/65876766/83733447/5/5_org_zoom.jpg" class="m-3 ml-4" style="width:15%; height:15%;" />
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <h5>
+                                            <a href="#" style="color: black; font-weight: bold; font-size:20px;">TRENDYOLMİLLA </a>
+                                            Çiçekli Dokuma Pijama Takımı
+
+                                        </h5>
+                                        <h6>THMAW21PT0221</h6>
+
+                                        <div class="stars stars-example-fontawesome-o">
+                                            <div class="br-wrapper br-theme-fontawesome-stars-o">
+                                                <select id="rating-fontawesome-o" name="rating" data-current-rating="4.6" autocomplete="off" style="display: none;">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+
+                                                </select>
+
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-start">
+                                            <span style="margin-right:3%;"> 99,99 TL</span>
+
+                                            <div class="d-flex flex-column">
+                                                <span style="font-size: 12px; color: #666;">
+                                                    Sepette %15 İndirim
+                                                </span>
+                                                <span style="font-size: 22px; color: #4A2964; font-weight:bold;">84,99 TL</span>
+
+                                            </div>
+
+
+
+                                        </div>
+
+                                        <hr style="color:blue; margin-right:1%; margin-left:1%;" />
+
+                                        <span style="color:black;" >Beden:</span>
+                                        <span style="margin-bottom: 30%;" class="size" id="size">34</span> <!--//Butona tıklayınca budaki bedenler değişmeli-->
+
+                                        <div class="d-flex flex-row" style="margin-bottom:4%;margin-top:2%;">
+
+                                            <button class="btn beden" style="margin-right: 3%; border: 2px solid #4A2964; border-radius:10px; "   id="size34">34</button>
+                                            <button class="btn beden" style="margin-right: 3%; border: 2px solid #4A2964; border-radius: 10px; "  id="size36">36</button>
+                                            <button class="btn beden" style="margin-right: 3%; border: 2px solid #4A2964; border-radius: 10px; "  id="size38">38</button>
+                                            <button class="btn beden" style="margin-right: 3%; border: 2px solid #4A2964; border-radius: 10px; "  id="size40">40</button>
+                                            <button class="btn beden" style="margin-right: 3%; border: 2px solid #4A2964; border-radius: 10px; "  id="size42">42</button>
+
+                                        </div>
+
+                                        <div class="d-flex flex-row ">
+                                            <button class="btn btn-primary" style="width:80%;">Sepete Ekle</button>
+                                            <button class="btn " style="border: 2px solid #4A2964; margin-left:7%;"><i class="feather icon-heart-on" style="color: #9F7CBA;width:20%;"></i></button>
+                                        </div>
+
+
+                                        <div class="d-flex flex-row mt-3">
+                                            <i class="feather icon-truck" style="color:green;"></i>
+                                            <span style="color: green; font-weight: bold;font-size:12px;" class="ml-2">Hızlı Teslimat:</span>
+                                            <span class="ml-1" style="font-size:12px;">12- 19 Ağustos</span>
+                                            <i class="feather icon-heart-on mr-1" style="margin-left: 30%; color: #9F7CBA; "></i>
+                                            <span style="font-size:12px;">27124 Favori</span>
+
+                                        </div>
+                                        <hr style="color:blue; width:450px;margin-right:0%; margin-left:0%;" />
+
+                                        <h6>Öne Çıkan Bilgiler</h6>
+                                        <ul>
+                                            <li style="color: #333; font-size:14px;margin-bottom:2%;">15 gün içinde ücretsiz iade. Detaylı bilgi için <a href="#" style="color: #944dff; "><u>tıklayın</u></a></li>
+                                            <li style="color: #333; font-size: 14px; margin-bottom: 2%;">%100 Viskoz</li>
+                                            <li style="color: #333; font-size: 14px; margin-bottom: 2%;">Modelin Ölçüleri: Boy: 1.78, Göğüs: 82, Bel: 62, Kalça: 88,</li>
+                                            <li style="color: #333; font-size: 14px; margin-bottom: 2%;">Numune Beden: S/36/1</li>
+                                            <li style="color: #333; font-size: 14px; margin-bottom: 2%;">Ürünlerimiz TRENDYOL etiketi ile gönderilecektir.</li>
+                                            <li style="color: #333; font-size: 14px; margin-bottom: 2%; ">
+                                                Bu üründen en fazla 10 adet sipariş verilebilir. 10 adetin üzerindeki siparişleri Trendyol iptal etme hakkını saklı tutar.
+
+                                            </li>
+                                        </ul>
+
+                                        <button class="btn btn-primary" id="someID"  style="width:100%;">ürünün tüm özellikleri</button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div  style="background-color: rgba(148, 77, 255, 0.1); width:80%; height:35%;">
+                           
+                                <div style="font-size: 15px; font-weight: bolder; color: black; margin: 2%; padding-top: 6%; padding-left: 6%;" class="mt-1 campaign"> ÜRÜNÜN KAMPANYALARI</div>
+                                <hr />
+                                <a href="#" style="font-size: 13px; color: #333; margin: 2%; padding-left: 3%;"><i class="feather icon-clipboard" style="color: #944dff"></i>150 TL Üzeri Kargo Bedava <i class="feather icon-chevron-right" style="color: #944dff"></i></a>
+                                <hr />
+                                
+                                <a href="#" style="font-size: 13px; color: #333; margin: 2%;padding-left:3%;padding-bottom:3%;"><i class="feather icon-clipboard" style="color: #944dff"></i>Sepette %15 İndirim<i class="feather icon-chevron-right" style="color: #944dff"></i></a>
+
+
+                            
+                        </div>
+
+                       
+                    </div>
+
+                </div>
+
+                <h5 style="color:black; margin-left:10%;margin-top:3%;">Ürün Bilgileri</h5>
+
+                <div class="row mt-3">
+                    <div class="col-md-1"></div>
+
+
+                    <div class="col-md-8 " id="productinfo">
+
+                        <div class="card" style="background-color: rgba(148, 77, 255, 0.1); margin-left: 2%; margin-right:0%; ">
+
+                            <div class="card-body">
+
+                                <div class="d-flex flex-row ">
+                                    <img src="https://cdn.dsmcdn.com/ty76/product/media/images/20210222/15/65876766/83733447/1/1_org_zoom.jpg" style="width:20%; height:20%;border-radius:3px;" class="img-fluid mt-3 ml-3" />
+
+                                    <div>
+                                        <h6 class="mt-4 ml-4" style="font-weight:bolder;">TRENDYOLMİLLA Çiçekli Dokuma Pijama Takımı THMAW21PT0221</h6>
+
+                                        <ul>
+                                            <li style="color: #333; font-size:14px;margin-bottom:2%;">%100 Viskoz</li>
+                                            <li style="color: #333; font-size:14px;margin-bottom:2%;">Modelin Ölçüleri: Boy: 1.78, Göğüs: 82, Bel: 62, Kalça: 88,</li>
+                                            <li style="color: #333; font-size:14px;margin-bottom:2%;">Numune Beden: S/36/1</li>
+                                            <li style="color: #333; font-size:14px;margin-bottom:2%;">Ürünlerimiz TRENDYOL etiketi ile gönderilecektir.</li>
+                                            <li style="color: #333; font-size:14px;margin-bottom:2%;">Bu üründen en fazla 10 adet sipariş verilebilir. 10 adetin üzerindeki siparişleri Trendyol iptal etme hakkını saklı tutar</li>
+                                            <li style="color: #333; font-size:14px;margin-bottom:2%;">Kampanya fiyatından satılmak üzere 10 adetten fazla stok sunulmuştur.</li>
+                                            <li style="color: #333; font-size:14px;margin-bottom:2%;">Listelenen fiyat 16 Ağustos 2021 tarihine kadar geçerlidir.</li>
+                                        </ul>
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <hr style=" margin-right:2%; margin-left:2%;" />
+
+                                <h5 class="ml-4 mt-4">Ürün Özellikleri</h5>
+
+                                <div class="row">
+
+                                    <div class="col-md-6">
+
+                                        <div class="d-flex flex-row justify-content-between" style="background-color: #CEBADE; margin-left: 2%; margin-bottom: 2%; border-radius: 3px; height:30%;">
+                                            <span style="font-size: 16px; color: black;padding:2%;">Materyal</span>
+                                            <span style="font-size: 16px; color: black; padding: 2%;">Pamuklu</span>
+
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-between" style="background-color: #CEBADE; margin-left: 2%; margin-bottom: 2%; height: 30%; ">
+                                            <span style="font-size: 16px; color: black; padding: 2%;">Kol Tipi</span>
+                                            <span style="font-size: 16px; color: black; padding: 2%;">Uzun</span>
+
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-between" style="background-color: #CEBADE; margin-left: 2%; margin-bottom: 2%; height: 30%; ">
+                                            <span style="font-size: 16px; color: black; padding: 2%;">Yaka</span>
+                                            <span style="font-size: 16px; color: black; padding: 2%;">V Yaka</span>
+
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-md-6">
+
+                                        <div class="d-flex flex-row justify-content-between" style="background-color: #CEBADE; margin-left: 2%; margin-bottom: 2%; height: 30%; ">
+                                            <span style="font-size: 16px; color: black; padding: 2%;">Desen</span>
+                                            <span style="font-size: 16px; color: black; padding: 2%;">Baskılı</span>
+
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-between" style="background-color: #CEBADE; margin-left: 2%; margin-bottom: 2%; height: 30%; ">
+                                            <span style="font-size: 16px; color: black; padding: 2%;">Paça Boyu</span>
+                                            <span style="font-size: 16px; color: black; padding: 2%;">Uzun</span>
+
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-between" style="background-color: #CEBADE; margin-left: 2%; margin-bottom: 2%; height: 30%; ">
+                                            <span style="font-size: 16px; color: black; padding: 2%;">Renk</span>
+                                            <span style="font-size: 16px; color: black; padding: 2%;">Beyaz</span>
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-md-3"></div>
+
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-8">
+
+                        <div class="card" style="background-color: rgba(148, 77, 255, 0.1); margin-left: 2%; margin-right:0%;">
+
+                            <div class="card-body ">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <i class="feather icon-alert-triangle" style="color: #C11B0D; font-size:30px;"></i>
+                                    <span style="color: #C11B0D; font-size:18px;margin-left:1%;"><a href="#" style="color: #C11B0D; " class="sikayet">Şikayet Et</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3"></div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-8">
+
+                        <div class="card" style="background-color: rgba(148, 77, 255, 0.1); margin-left: 2%; margin-right:0%;">
+
+                            <div class="card-body ">
+
+
+                                <div class="d-flex flex-row m-1">
+                                    <div class="moreproduct mr-4">
+                                        <img src="https://cdn.dsmcdn.com/ty76/product/media/images/20210222/15/65876766/83733447/1/1_org_thumb.jpg" style="width:70%; height:70%; margin:3%;" class="rounded-circle " />
+                                        <br />
+
+                                        <span style="font-size: 14px; color: black; font-weight: bolder;">Daha Fazla TRENDYOLMİLLA Pijama Takımı</span>
+
+                                    </div>
+
+                                    <div class="moreproduct mr-4">
+                                        <img src="https://cdn.dsmcdn.com/ty46/product/media/images/20210105/20/47403402/92973692/1/1_org_thumb.jpg" style="width:70%; height:70%; margin:3%;" class="rounded-circle " />
+                                        <br />
+
+                                        <a href="#"><span style="font-size: 14px; color: black; font-weight: bolder;">Daha Fazla TRENDYOLMİLLA Pijama Takımı</span></a>
+
+                                    </div>
+
+
+                                    <div class="moreproduct mr-4">
+                                        <img src="https://cdn.dsmcdn.com/ty63/product/media/images/20210202/14/59348105/116116784/1/1_org_thumb.jpg" style="width:70%; height:70%; margin:3%;" class="rounded-circle " />
+                                        <br />
+
+                                        <span style="font-size:14px;color:black; font-weight:bolder;">Daha Fazla TRENDYOLMİLLA Pijama Takımı</span>
+
+                                    </div>
+                                    <div class="moreproduct mr-4">
+                                        <img src="https://cdn.dsmcdn.com/ty126/product/media/images/20210607/16/96781589/184029047/1/1_org_thumb.jpg" style="width:70%; height:70%; margin:3%;" class="rounded-circle " />
+                                        <br />
+                                        <span style="font-size: 14px; color: black; font-weight: bolder;">Daha Fazla TRENDYOLMİLLA Pijama Takımı</span>
+
+                                    </div>
+                                    <div class="moreproduct mr-4">
+                                        <img src="https://cdn.dsmcdn.com/ty61/product/media/images/20210125/15/57029809/63346581/1/1_org_thumb.jpg" style="width:70%; height:70%; margin:3%;" class="rounded-circle " />
+                                        <br />
+
+                                        <span style="font-size: 14px; color: black; font-weight: bolder;">Daha Fazla TRENDYOLMİLLA Pijama Takımı</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3"></div>
+                </div>
+
+
+                <div class="row mt-4">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-8">
+
+                        <div class="card" style="background-color: rgba(148, 77, 255, 0.1); margin-left: 2%; margin-right:0%;">
+
+                            <div class="card-body ">
+
+                                <h4 style="color:black;">Bunlar da İlginizi Çekebilir</h4>
+
+                                <div class="ilgi m-3">
+                                   
+                                    <a href="#" style="color: black; font-size: 14px; border: 1px solid #944dff; border-radius:14px; padding: 3px;">Damat Bohçası</a>
+                                    <a href="#" style="color: black; font-size: 14px; border: 1px solid #944dff; border-radius: 14px; padding: 3px;">Çekmece</a>
+                                    <a href="#" style="color: black; font-size: 14px; border: 1px solid #944dff; border-radius: 14px; padding: 3px;">Dolap</a>
+                                    <a href="#" style="color: black; font-size: 14px; border: 1px solid #944dff; border-radius: 14px; padding: 3px;">Damat Seti</a>
+                                    <a href="#" style="color: black; font-size: 14px; border: 1px solid #944dff; border-radius: 14px; padding: 3px;">1 yaş hediyesi</a>
+                                    <a href="#" style="color: black; font-size: 14px; border: 1px solid #944dff; border-radius: 14px; padding: 3px;">Damat Bohçası</a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3"></div>
+                </div>
+
+
+            </div>
+            <!-- End Contentbar -->
+            <!-- Start Footerbar -->
+            <div class="footerbar">
+                <footer class="footer">
+                    <p class="mb-0">© 2019 Theta - All Rights Reserved.</p>
+                </footer>
+            </div>
+            <!-- End Footerbar -->
+        </div>
+        <!-- End Rightbar -->
+    </div>
+    <!-- End Containerbar -->
+    <!-- Start js -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/vertical-menu.js"></script>
+    <!-- Switchery js -->
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+    <!-- Core js -->
+    <script src="assets/js/core.js"></script>
+    <!-- jQuery Bar Rating js -->
+    <script src="assets/plugins/jquery-bar-rating/jquery.barrating.min.js"></script>
+    <script src="assets/js/custom/custom-barrating.js"></script>
+    <!-- Slick js -->
+    <script src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+    <!-- End js -->
+
+
+    <script>
+        //slick Slider 
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
+        });
+
+
+        //buton tıklayınca beden değişimi
+
+        var size = document.querySelector("#size");
+
+        document.querySelector("#size34").onclick = function () {
+
+            size.innerHTML = "34";
+        }
+       
+        document.querySelector("#size36").onclick = function () {
+
+            size.innerHTML = "36";
+        }
+           
+        document.querySelector("#size38").onclick = function () {
+
+            size.innerHTML = "38";
+        }
+        document.querySelector("#size40").onclick = function () {
+
+            size.innerHTML = "40";
+        }
+
+        document.querySelector("#size42").onclick = function () {
+
+            size.innerHTML = "42";
+        }
+
+        // Ürünün Tüm özellikleri kısmı
+
+        //$('html, body').animate({ scrollTop: $(document).height() }, 'slow');
+
+        $(document).ready(function () {
+
+            $('#someID').click(function () {
+               
+                $("html, body").animate({ scrollTop: $(document).height() }, 'slow');
+               
+                //$('html, #productinfo').animate({ scrollTop: $(document).height() },'slow');
+                //return false;
+            });
+
+        });
+
+
+    </script>
+</body>
+
+<!-- Mirrored from xpanthersolutions.com/admin-templates/theta/html/light-vertical/page-starter.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 29 Aug 2019 19:23:14 GMT -->
+</html>
