@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label> Sayıyı giriniz:</label>
+    <input type="text" name="sayi" id="sayi">
+    <button id="hesapla">Tek mi Çift Mi?</button>
+    <div id="sonuc"></div>
+
+
+ <script>
+  var btn= document.getElementById("hesapla");
+  var sonuc= document.getElementById("sonuc");
+  var tekçift;
+  btn.onclick=function () {
+       var sayi= document.getElementById("sayi").value;
+     if(sayi%2==0)
+     {
+         tekçift="Çift sayıdır."
+     }else
+     tekçift="Tek sayıdır."
+       sonuc.innerHTML=sayi + " " +tekçift;
+
+    }
+
+ </script>
+
+
+</body>
+</html>

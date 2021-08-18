@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayı Tahmin Etme Oyunu</title>
+</head>
+<body>
+    
+   <h1>Butonla Sayı Tahmin Etme Oyunu</h1>
+   <input type="button" value="Oyunu Başlat" id="baslat">
+   <input type="button" value="Tahmin Et" id="tahmin" disabled><br>
+   <input type="text" placeholder="Bir sayı Giriniz: (0-100)" id="sayi">
+
+    <script>
+    var rsayi, sayac, hak=3;
+  var baslat= document.getElementById("baslat");
+  var tahmin= document.getElementById("tahmin");
+  var sayi= document.getElementById("sayi");
+  baslat.onclick= function () { 
+      tahmin.disabled= false;
+      rsayi= Math.round(Math.random()*100);
+      sayac=0;
+   }
+
+   tahmin.onclick= function () {
+// hak kontrolü burda
+// bu kısım olmadan da çalışıyor haksız ama 
+   sayac++;
+  if( rsayi!=sayi.value && sayac>hak){
+      
+      window.alert("Üzgünüz hakkınız bitti.");
+      tahmin.disabled= true;
+  }
+
+
+  if( rsayi==sayi.value)
+  {
+      window.alert("tebrikler kazandınız.");
+  } 
+  else if( sayi.value>rsayi){
+    window.alert("Daha küçük bir sayı giriniz.");
+  } else{
+    window.alert("Daha büyük bir sayı giriniz.");
+  }
+
+    }
+
+
+
+
+    </script>
+</body>
+</html>

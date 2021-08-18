@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript ile Buton Oluşturma</title>
+    <style>
+.kare-button{
+    background-color: violet;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border: solid grey 2px;
+    margin:5px;
+}
+
+    </style>
+</head>
+<body>
+    <button id="ekle">Dinamik Buton Ekle</button>
+    <div id="panel"></div>
+
+
+    <script>
+  var panelBtn= document.getElementById("panel");
+  var ekleBtn= document.getElementById("ekle");
+  sayac=1;
+
+  ekleBtn.onclick= function () {
+    var btn= document.createElement("button");
+    btn.textContent=sayac++;
+    btn.classList="kare-button";
+    panelBtn.appendChild(btn);
+
+
+
+    }
+
+    </script>
+</body>
+</html>

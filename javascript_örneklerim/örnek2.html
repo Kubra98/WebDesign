@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>lorem ipsum dolor sit amet, jfbdov </p>
+
+    <ul>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li>item 1</li>
+    </ul>
+    <p>lorem ipsum dolor sit amet, jfbdov </p>
+</body>
+</html>
+
+<script>
+   var p=  document.getElementsByTagName('p')[0];
+   p.textContent=' komple uygulama' // yazıyı değiştirdi.
+   p.style.backgroundColor='blue';
+  // textContent kısmı yazılar ile alakalı şeyleri kapsar.
+
+  p.innerHTML='yeni yazı ve innerhtml kullanıldı.';
+
+
+  var ul = document.querySelector('ul');
+  ul.innerHTML='<li>tüm liste yazıları bu yazı ile değişti ve innerhtml sayesinde oldu</li> <li>tüm liste yazıları bu yazı ile değişti ve innerhtml sayesinde oldu</li>';
+
+
+</script>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <input type="text" id="sayi">
+  <button id="hesapla">Faktöriyel Hesapla</button>
+  <div id="uyarı"></div>
+
+  <script>
+document.getElementById("hesapla").onclick=()=>{
+    var sonuc =1;
+    var sayi = document.getElementById("sayi").value;
+    for(var i=1; i<= sayi; i++)
+    {
+        sonuc *= i;
+        
+    }
+
+    document.getElementById("uyarı").innerHTML= "Sayının Faktöriyeli: " + sonuc;
+    
+}
+
+  </script>
+
+
+
+</body>
+</html>

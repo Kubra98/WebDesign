@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vize ve Final notu Ortalaması</title>
+
+    <style>
+        label{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    
+  <label for="txtVize">Vize :
+  <input type="text" name="txtVize" id="txtVize">
+</label>
+
+<label for="txtFinal">Final :
+    <input type="text" name="txtFinal" id="txtFinal">
+  </label>
+  
+  <input type="button" name="button" id="hesapla" value="HESAPLA">
+
+  <div id="sonuc"></div>
+
+
+  <script>
+  var txtVize= document.getElementById("txtVize");
+  var txtFinal= document.getElementById("txtFinal");
+  var btnHesapla= document.getElementById("hesapla");
+  var sonucdiv= document.getElementById("sonuc");
+
+  btnHesapla.onclick= function () {
+      var vize= Number(txtVize.value);
+      var final= Number(txtFinal.value);
+      
+      var ortalama= vize * 40/100+ final*60/100;
+       var durum="";
+      
+      if( ortalama>=50 && final>= 50)
+      {
+        durum="Geçtiniz";
+      }
+      else if(ortalama>=50 && final<50)
+      {
+        durum= "Final notunuz başarısız";
+      }
+      else{
+        durum="Ortalama ve final notunuz başarısız.";
+      }
+
+      sonucdiv.innerHTML="Notunuz:" + ortalama + "<br>" + durum;
+    
+    }
+  
+
+
+
+
+
+
+  </script>
+
+</body>
+</html>

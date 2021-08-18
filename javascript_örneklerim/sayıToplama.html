@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>Javascript Toplama</h5>
+    <form>
+        <label>1. sayı:
+            <input type="text" id="s1">
+        </label>
+        <label>2. sayı:
+            <input type="text" id="s2">
+        </label>
+        <input type="button" value="Sayıları Topla" id="hesapla">
+    </form>
+
+    <div id="sonuc"></div>
+
+    <script>
+        var sayi1= document.getElementById("s1");
+        var sayi2= document.getElementById("s2");
+        var hesaplabtn= document.getElementById("hesapla");
+        var sonuc= document.getElementById("sonuc");
+        
+        hesaplabtn.onclick=(function()
+        {
+           
+			var toplam= Number(sayi1.value) + Number(sayi2.value);
+            sonuc.innerHTML+= toplam;
+
+		});
+    </script>
+</body>
+</html>
